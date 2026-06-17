@@ -115,6 +115,16 @@ heading {
   font-size: 32px;
 }
 
+.name-cn {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', serif;
+  font-weight: 500;
+  font-size: 0.88em;
+  letter-spacing: 0.12em;
+  color: #2c2c2c;
+  margin-left: 0.15em;
+  vertical-align: baseline;
+}
+
 .one {
   width: 160px;
   height: 160px;
