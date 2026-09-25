@@ -109,10 +109,11 @@ heading {
 }
 
 .name {
-  padding-top: 20px;
-  margin: 0;
+  padding-top: 0;
+  margin: 0 0 5px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  line-height: 1.15;
 }
 
 .name-cn {
@@ -123,6 +124,56 @@ heading {
   color: #2c2c2c;
   margin-left: 0.15em;
   vertical-align: baseline;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  column-gap: 36px;
+  align-items: center;
+  padding: 30px 20px 24px;
+}
+
+.intro-sidebar {
+  width: 220px;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.intro-content > p:not(.name):not(.intro-links) {
+  line-height: 1.55;
+}
+
+.intro-content > p:first-child {
+  margin-top: 0;
+}
+
+.intro-links {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .intro-sidebar {
+    width: min(220px, 68vw);
+    margin: 0 auto;
+  }
+
+  .profile-photo {
+    margin: 0 auto;
+  }
 }
 
 .one {
